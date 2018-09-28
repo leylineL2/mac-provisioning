@@ -21,7 +21,7 @@ homebrew_packages:
   - name: tmux
   - name: tree
   - name: vagrant-completion
-  - { name: vim, installoptions: without-python }
+  - { name: vim, install_options: without-python }
   - name: wget
   - name: zsh
 
