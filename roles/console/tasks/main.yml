@@ -1,0 +1,5 @@
+---
+- name: copy terminal.app profile
+  copy:
+    src: ProBlue.terminal
+    dest: ~/Documents
