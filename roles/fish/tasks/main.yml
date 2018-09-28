@@ -1,0 +1,40 @@
+---
+- name: Setup fish enviroment
+  copy:
+    src: config/config.fish
+    dest: ~/.config/fish/config.fish
+
+- name: make the fisherman directory
+  file:
+    path="~/.config/fish/functions"
+    state=directory
+    mode=0755
+    recurse=yes
+
+- name: install fisherman
+  get_url:
+    url="{{ item.url }}"
+    dest="{{ item.dest }}"
+  with_items:
+    - {url: "https://git.io/fisherman", dest: "~/.config/fish/functions/fisher.fish"}
+
+- name: fisher plugin
+  command: fish -c "fisher {{ item }}"
+  with_items:
+    - z
+    - fzf
+    - edc/bass
+    - omf/thefuck
+    - omf/theme-bobthefish
+
+- name: create 
+  file:
+    path: ~/.config/fish/completions
+    state: directory
+    mode: 0755
+
+- name: 
+  copy:
+    src: /Applications/Docker.app/Contents/Resources/etc/docker.fish-completion
+    dest: ~/.config/fish/completions/docker.fish
+    remote_src: yes
