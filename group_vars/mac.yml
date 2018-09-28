@@ -5,86 +5,87 @@ homebrew_taps:
   - tap: kyoshidajp/ghkw
 
 homebrew_packages:
-  - { name: ansible, state: absent, install_options: force }
   - name: autojump
-  - name: chromedriver
-  - name: colordiff
-  - name: editorconfig
-  - name: emacs
+  # - name: chromedriver
+  # - name: colordiff
+  # - name: editorconfig
+  # - name: emacs
   - name: fish
-  - name: fzf
-  - name: ghkw
-  - name: git
-  - name: git-secrets
-  - name: gnuplot
-  - name: go
-  - name: graphviz
-  - { name: guetzli, state: absent, install_options: force }
-  - { name: heroku, state: absent, install_options: force }
+  # - name: fzf
+  # - name: ghkw
+  # - name: git
+  # - name: git-secrets
+  # - name: gnuplot
+  # - name: go
+  # - name: graphviz
+  # - { name: guetzli, state: absent, install_options: force }
+  # - { name: heroku, state: absent, install_options: force }
   - name: iproute2mac
   - name: jq
   - { name: jsonlint, state: absent, install_options: force }
-  - { name: kibana, state: absent, install_options: force }
-  - { name: kibana@5.6, state: absent, install_options: force }
-  - { name: kibana@4.4, state: absent, install_options: force }
-  - name: kubectl
-  - name: less
-  - name: lv
-  - name: mecab
-  - name: mongodb
-  - name: mysql
+  # - { name: kibana, state: absent, install_options: force }
+  # - { name: kibana@5.6, state: absent, install_options: force }
+  # - { name: kibana@4.4, state: absent, install_options: force }
+  # - name: kubectl
+  # - name: less
+  # - name: lv
+  # - name: mecab
+  # - name: mongodb
+  # - name: mysql
   - name: nmap
   - { name: node, state: absent, install_options: force }
   - name: nodebrew
-  - name: octave
+  # - name: octave
   - name: openssl
-  - name: packer
-  - { name: phantomjs, state: absent, install_options: force }
-  - name: plantuml
+  # - name: packer
+  # - { name: phantomjs, state: absent, install_options: force }
+  # - name: plantuml
   - name: pkg-config
-  - name: postgresql
-  - { name: pyenv, state: absent, installoptions: force }
+  # - name: postgresql
+  # - { name: pyenv, state: absent, install_options: force }
   - name: python
-  - name: rbenv
-  - name: ruby-build
+  # - name: rbenv
+  # - name: ruby-build
   - name: screen
-  - { name: sphinx, state: absent, installoptions: force }
-  - name: sqlite
-  - name: terraform
-  - name: tig
+  # - { name: sphinx, state: absent, installoptions: force }
+  # - name: sqlite
+  # - name: terraform
+  # - name: tig
   - name: tmux
-  - name: travis
+  # - name: travis
   - name: tree
   - name: vagrant-completion
   - { name: vim, installoptions: without-python }
   - name: wget
   - name: zsh
 
+
 pip_packages:
   - name: ansible
   - name: awscli
   - name: aws-shell
   - { name: aws-sam-cli, state: absent }
-  - { name: beautifulsoup4, state: absent }
+  # - { name: beautifulsoup4, state: absent }
   - name: boto
   - name: boto3
-  - name: cfn_flip
+  # - name: cfn_flip
   - { name: django, state: absent }
-  - name: jinja2
-  - name: json2yaml
-  - name: jupyter
-  - { name: localstack, state: absent }
-  - { name: numpy, state: absent }
+  # - name: jinja2
+  # - name: json2yaml
+  # - name: jupyter
+  # - { name: localstack, state: absent }
+  # - { name: numpy, state: absent }
   - name: pip
-  - { name: pymongo, state: absent }
-  - { name: robobrowser, state: absent }
-  - { name: scrapy, state: absent }
-  - { name: selenium, state: absent }
-  - name: sphinx
+  # - { name: pymongo, state: absent }
+  # - { name: robobrowser, state: absent }
+  # - { name: scrapy, state: absent }
+  # - { name: selenium, state: absent }
+  # - name: sphinx
 
 homebrew_cask_packages:
-  - name: docker-toolbox
-  - name: minikube
+  - name: docker
+  # - name: minikube
+
 
 rbenv:
   default_ruby: 2.4.1
