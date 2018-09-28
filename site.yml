@@ -5,6 +5,8 @@
   roles:
     - homebrew
     - pip
-    - rbenv
-    - nodebrew
-    - npm
+    # - rbenv
+    # - nodebrew
+    # - npm
+    - fish
+    - font
