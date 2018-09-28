@@ -6,6 +6,7 @@ homebrew_taps:
 
 homebrew_packages:
   - name: autojump
+  - name: bash-completion
   - name: fish
   - name: iproute2mac
   - name: jq
@@ -16,12 +17,12 @@ homebrew_packages:
   - name: openssl
   - name: pkg-config
   - name: python
-  - { name: "ricty", install_options: with-powerline }
   - name: screen
   - name: tmux
   - name: tree
   - name: vagrant-completion
   - { name: vim, install_options: without-python }
+  - name: wireshark
   - name: wget
   - name: zsh
 
@@ -38,7 +39,7 @@ pip_packages:
   - name: powerline-status
 
 homebrew_cask_packages:
-  - name: google-chrome
+  # - name: google-chrome
   - name: docker
   - name: slack
 
