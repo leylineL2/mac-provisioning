@@ -2,6 +2,7 @@
 
 homebrew_taps:
   - tap: homebrew/cask
+  - tap: sanemat/font
   - tap: kyoshidajp/ghkw
 
 homebrew_packages:
