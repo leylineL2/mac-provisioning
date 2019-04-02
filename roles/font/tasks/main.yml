@@ -5,7 +5,7 @@
     state: '{{ item.state | default("latest") }}'
     install_options: '{{ item.install_options | default() | join(",") if item.install_options is not string else item.install_options }}'
   with_items:
-    - { name: "ricty", install_options: with-powerline }
+    - { name: "ricty", install_options: "with-powerline" }
 
 - name: copy builded ricty font
   copy:
