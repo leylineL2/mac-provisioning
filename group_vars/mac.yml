@@ -52,10 +52,11 @@ rbenv:
     - version: 2.4.1
 
 nodebrew:
-  default_node: v8.10.0
+  default_node: v8
   nodes:
     - version: v6.10.3
     - version: v8.10.0
+    - version: v8
     - version: v9.4.0
 
 npm_packages:
@@ -65,6 +66,9 @@ npm_packages:
   - name: jsonlint
   - name: npm@lts
   - name: npm-check-updates
+  - name: eslint
+  - name: eslint-config-prettier
+  - name: eslint-plugin-prettier
   - name: swagger
   - name: textlint
   - name: textlint-rule-max-ten
