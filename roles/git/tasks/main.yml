@@ -1,0 +1,5 @@
+---
+- name: Setup git enviroment
+  copy:
+    src: gitconfig
+    dest: ~/.gitconfig
