@@ -16,16 +16,15 @@
     url="{{ item.url }}"
     dest="{{ item.dest }}"
   with_items:
-    - {url: "https://git.io/fisherman", dest: "~/.config/fish/functions/fisher.fish"}
+    - {url: "https://git.io/fisher", dest: "~/.config/fish/functions/fisher.fish"}
 
 - name: fisher plugin
-  command: fish -c "fisher {{ item }}"
+  command: fish -c "fisher add {{ item }}"
   with_items:
     - z
     - fzf
     - edc/bass
-    - omf/thefuck
-    - omf/theme-bobthefish
+    - oh-my-fish/theme-bobthefish
 
 - name: create 
   file:
