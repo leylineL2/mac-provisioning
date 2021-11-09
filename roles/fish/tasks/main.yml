@@ -19,20 +19,21 @@
     - {url: "https://git.io/fisher", dest: "~/.config/fish/functions/fisher.fish"}
 
 - name: fisher plugin
-  command: fish -c "fisher add {{ item }}"
+  command: fish -c "fisher install {{ item }}"
   with_items:
-    - z
-    - fzf
+    - jethrokuan/z
+    - jethrokuan/fzf
     - edc/bass
     - oh-my-fish/theme-bobthefish
+    - evanlucas/fish-kubectl-completions
 
-- name: create 
+- name: create
   file:
     path: ~/.config/fish/completions
     state: directory
     mode: 0755
 
-- name: 
+- name:
   copy:
     src: /Applications/Docker.app/Contents/Resources/etc/docker.fish-completion
     dest: ~/.config/fish/completions/docker.fish

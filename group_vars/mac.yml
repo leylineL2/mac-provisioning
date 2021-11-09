@@ -2,6 +2,7 @@
 
 homebrew_taps:
   - tap: homebrew/cask
+  - tap: homebrew/cask-versions
   - tap: sanemat/font
   - tap: kyoshidajp/ghkw
 
@@ -17,12 +18,11 @@ homebrew_packages:
   - name: nodebrew
   - name: openssl
   - name: pkg-config
-  - name: python
-  - name: screen
+  # - name: screen
   - name: tmux
   - name: tree
   - name: vagrant-completion
-  - { name: vim, install_options: without-python }
+    #  - { name: vim, install_options: without-python }
   - name: wireshark
   - name: wget
   - name: zsh
@@ -43,6 +43,9 @@ homebrew_cask_packages:
   # - name: google-chrome
   - name: docker
   - name: slack
+  - name: remote-desktop-connection
+  - name: karabiner-elements
+  - name: visual-studio-code
 
 
 
@@ -52,12 +55,9 @@ rbenv:
     - version: 2.4.1
 
 nodebrew:
-  default_node: v8
+  default_node: v14
   nodes:
-    - version: v6.10.3
-    - version: v8.10.0
-    - version: v8
-    - version: v9.4.0
+    - version: v12
 
 npm_packages:
   - name: aws-cdk

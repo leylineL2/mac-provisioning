@@ -4,9 +4,9 @@
   gather_facts: False
   roles:
     - homebrew
-    - pip
+    # - pip
     # - rbenv
-    # - nodebrew
+    - nodebrew
     # - npm
     - fish
     - git
