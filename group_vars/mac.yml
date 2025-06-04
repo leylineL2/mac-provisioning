@@ -1,8 +1,6 @@
 # The variables file used by the playbooks in the mac group.
 
 homebrew_taps:
-  - tap: homebrew/cask
-  - tap: homebrew/cask-versions
   - tap: sanemat/font
   - tap: kyoshidajp/ghkw
 
@@ -18,14 +16,14 @@ homebrew_packages:
   - name: nodebrew
   - name: openssl
   - name: pkg-config
-  # - name: screen
   - name: tmux
   - name: tree
-  - name: vagrant-completion
-    #  - { name: vim, install_options: without-python }
   - name: wireshark
   - name: wget
   - name: zsh
+  - name: font-hackgen
+  - name: font-hackgen-nerd
+
 
 
 pip_packages:
@@ -41,9 +39,9 @@ pip_packages:
 
 homebrew_cask_packages:
   # - name: google-chrome
-  - name: docker
-  - name: slack
-  - name: remote-desktop-connection
+  # - name: docker
+  # - name: slack
+  - name: remote-desktop-manager
   - name: karabiner-elements
   - name: visual-studio-code
 
